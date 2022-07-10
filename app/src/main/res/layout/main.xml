@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<EditText
+			android:id="@+id/bvid"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="输入视频BV号"
+			android:minHeight="48dp" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/find"
+			android:text="搜索"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/body"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:visibility="visible">
+
+		<TextView
+			android:id="@+id/videotitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="视频名称" />
+
+		<com.pt.pojo.MyImageView
+			android:id="@+id/videopic"
+			android:layout_width="600px"
+			android:layout_height="400px" />
+
+		<TextView
+			android:id="@+id/board"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:minHeight="48dp"
+			android:textIsSelectable="true" />
+
+		<CheckBox
+			android:id="@+id/soundonly"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="true"
+			android:hint="sound only"
+			android:minHeight="48dp" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				android:id="@+id/download"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="下载" />
+
+			<Button
+				android:id="@+id/savepic"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="保存封面" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
